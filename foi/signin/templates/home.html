@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="container">
+      <section class="foi-page-section pt-0">
+                <div class="row">
+                    <div class="col-md-6 mb-4 mb-md-0 pr-lg-0">
+
+                        <h2 class="about-section-one-title">
+
+                            Welcome, {{ user.get_full_name }} <small>{{ user.username }}</small>!
+                        </h2>
+                        <div class="about-section-one-content">
+                            <p>Your email address: {{ user.email }}</p>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6 pl-lg-0 d-flex align-items-center align-items-lg-end">
+                        <img src="{% static 'signin/images/about_img_1.png'%}" alt="about" class="img-fluid" width="448px">
+                    </div>
+                </div>
+            </section>
+  <h2></h2>
+</div>
+
+{% endblock %}

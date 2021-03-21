@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta charset="utf-8">
+    <title>{% block title %}Simple is Better Than Complex{% endblock %}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>FOI App Landing Page</title>
+    <link rel="stylesheet" href="{% static 'signin/vendors/fontawesome-free/css/all.min.css' %}">
+    <link rel="stylesheet" href="{% static 'signin/css/style.css' %}">
+  </head>
+  <body>
+  {% include 'navbar.html'%}
+  <hr>
+    <main>
+      {% block content %}
+      {% endblock %}
+    </main>
+
+    </header>
+
+  {% include 'footer.html'%}
+
+  </body>
+</html>
+
